@@ -1,0 +1,156 @@
+.slide-wrapper {
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+}
+
+.slide:hover {
+  will-change: transform;
+}
+
+.slide li {
+  flex-shrink: 0;
+  width: 80vw;
+  max-width: 900px;
+  margin: 0 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  opacity: .8;
+  transform: scale(.8);
+  transition: .4s;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 15px;
+  font-family: urbanist;
+}
+
+.slide img {
+  display: block;
+  max-width: 100%;
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+[data-control="slide"] li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 5px;
+}
+
+
+.custom-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.custom-controls li {
+  opacity: .8;
+  transform: scale(.8);
+  width: 100px;
+  height: 40px;
+  overflow: hidden;
+  margin: 2px;
+  transition: .3s;
+}
+
+.custom-controls li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow-nav {
+  position: relative;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.arrow-nav button {
+  cursor: pointer;
+  border: none;
+  color: #FEFEFE;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  visibility: hidden;
+}
+
+.arrow-nav button.prev {
+  left: 0;
+  position: absolute;
+  background: #D49D32;
+  border-radius: 50%;
+}
+
+.arrow-nav button.next {
+  right: 0;
+  background: #D49D32;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.btn-slide {
+    max-width: 500px;
+    border: 1px solid #5E5E5E;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #363636;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    transition: .3s;
+}
+
+.custom-controls {
+  display: none;
+}
+
+@media only screen and (min-width: 701px) and (max-width: 845px) {
+  .slide li {
+    width: 90vw;
+    padding: 20px;
+    font-size: 0.8rem;
+  }
+  
+}
+
+@media only screen and (max-width: 700px){
+  .slide li {
+    width: 90vw;
+    padding: 20px;
+    font-size: 0.8rem;
+  }
+
+  .arrow-nav button {
+    visibility: inherit!important;
+  }
+}

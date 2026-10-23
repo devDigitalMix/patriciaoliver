@@ -1,0 +1,132 @@
+.contato {
+    background: url(/img/9\ 4.webp) center center no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #fff;
+}
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-family: Urbanist;
+}
+.contato-social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: rgba(217, 217, 217, .15);
+    border-left: 4px solid #D49D32;
+    border-right: 4px solid #D49D32;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-items: center;
+    width: 550px;
+}
+.contato-social > a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: .3s;
+    max-width: fit-content;
+}
+.contato-social a > p {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.01);
+    left: 0px;
+    transition: 0s;
+}
+.contato-social a img {
+    transition: .3s;
+}
+.contato-social a:hover > p {
+    opacity: 1;
+    transform: scale(1);
+    left: -50px;
+    transition: .3s;
+    width: 300px;
+}
+.contato-social a:hover img {
+    opacity: 0;
+}
+.contato-social a:nth-child(1):hover p {
+    left: 0px;
+}
+.contato-social a:nth-child(3):hover p {
+    left: -65px;
+}
+.contato-foto img {
+    border-radius: 360px;
+}
+.contato-foto {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.contato-title h3{
+    font-family: 'funwork';
+    font-size: 2.5rem;
+    color: #D49D32;
+}
+.contato-title h3::after{
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #ffffff6b;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width:385px) and (max-width:595px) {
+
+    .contato-social {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-items: center;
+        width: 330px;
+    }
+
+    .contato-social a:hover > p {
+        width: 200px;
+    }
+    .contato-social a:nth-child(1):hover p {
+        left: -30px;
+    }
+    .contato-social a:nth-child(3):hover p {
+        left: -55px;
+    }
+    
+}
+@media only screen and (min-width:0px) and (max-width:384px) {
+
+    .contato-social {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        justify-items: center;
+        width: 220px;
+    }
+
+    .contato-social a:hover > p {
+        width: 200px;
+    }
+    .contato-social a:nth-child(1):hover p {
+        left: -30px;
+    }
+    .contato-social a:nth-child(3):hover p {
+        left: -55px;
+    }
+
+    .contato-title h3{
+        font-family: 'funwork';
+        font-size: 1.5rem;
+        color: #D49D32;
+    }
+    
+}

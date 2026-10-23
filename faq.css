@@ -1,0 +1,147 @@
+.faq {
+    padding: 50px 10px;
+}
+
+.faq-title {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'funwork';
+    font-size: 2.5rem;
+    line-height: 1.2em;
+}
+.faq-list {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+.faq-list dt img {
+    position: absolute;
+    left: 10px;
+    transition: .3s;
+}
+.faq-list dt{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: .83rem;
+    font-family: 'urbanist';
+    letter-spacing: .2em;
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    position: relative;
+}
+
+.faq-list dd{
+    font-size: .83rem;
+    font-family: 'urbanist';
+    margin-top: 20px;
+    background-color: #282828;
+    padding: 20px;
+}
+/*Accordion*/
+.js-accordion dd {
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .js-accordion dt {
+    cursor: pointer;
+    padding: 10px 45px;
+    box-shadow: 0px 2px 0px #ffffff;
+  }
+
+  .js-accordion +   .js-accordion {
+    margin-top: 20px;
+  }
+
+  .js-accordion dt.ativo {
+    box-shadow: 0px 0px 0px #D49D32;
+    color: #D49D32;
+  }
+  .js-accordion dt.ativo img {
+    opacity: 0;
+  }
+  .js-accordion dd.ativo {
+    margin-top: 0px;
+    display: block;
+    opacity: 1;
+    position: inherit;
+    animation: showAccordionDown .4s;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0px 2px 0px #D49D32;
+  }
+
+  @keyframes showAccordionDown {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media only screen and (min-width:550px) and (max-width:1005px) {
+
+    .faq-title {
+        grid-gap: 8px;
+        transform: rotate(0deg);
+        position: inherit;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+  }
+  @media only screen and (min-width:361px) and (max-width:549px) {
+
+    .faq-title {
+        grid-gap: 8px;
+        transform: rotate(0deg);
+        position: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.8rem;
+    }
+    .faq-list dt{
+        font-size: .65rem;
+    }
+    .faq-list dd{
+        font-size: .6rem;
+    }
+    
+  }
+@media only screen and (min-width:0px) and (max-width:360px) {
+
+    .faq-title {
+      grid-gap: 8px;
+      transform: rotate(0deg);
+      position: inherit;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.2rem;
+  }
+  
+  .faq-list dt{
+    font-size: .55rem;
+}
+.faq-list dd{
+    font-size: .55rem;
+}
+.faq-list dd{
+  padding: 10px;
+}
+.js-accordion dt {
+  padding: 10px 10px;
+}
+.faq-list dt img {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  transform: scale(.5);
+  transition: .3s;
+}
+}

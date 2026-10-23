@@ -1,0 +1,168 @@
+.header {
+    background: url(/img/9\ 4.webp) center center no-repeat;
+    background-size: cover;
+}
+.menu-fixo {
+    background: #737478;
+    position: fixed;
+    right: 0px;
+    display: grid;
+    width: 10px;
+    height: 100vh;
+    align-content: space-evenly;
+    z-index: 1000;
+}
+.menu-fixo > a {
+    transform: rotate(-90deg);
+    font-family: 'funwork';
+    font-weight: 700;
+    position: relative;
+    background: #737478;
+    height: 60px;
+    width: 150px;
+    right: 105px;
+    padding: 10px;
+    text-align: center;
+    transition: .3s;
+}
+.menu-fixo > a:hover {
+    background-color: #D49D32;
+    box-shadow: 0px 0px 10px 2px #D49D32;
+}
+
+@media only screen and (max-width: 844px) {
+
+    .menu-fixo {
+        background: rgba(217, 217, 217, 0);
+        position: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        width: max-content;
+        right: inherit;
+        height: max-content;
+        align-content: space-around;
+        justify-content: center;
+        z-index: 1000;
+    }
+    .menu-fixo > a {
+        transform: rotate(0deg);
+        background: rgba(217, 217, 217, 0);
+        height: 60px;
+        width: 150px;
+        right: 0px;
+        padding: 10px;
+        text-align: center;
+        transition: .3s;
+    }
+    
+}
+
+.header-grid-e {
+    display: grid;
+    grid-template-columns: 1fr .6fr;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    align-items: center;
+}
+.header-title h1 {
+    font-family: 'funwork';
+    font-weight: 400;
+    line-height: 1.25em;
+    font-size: 2.58rem;
+    text-transform: uppercase;
+    max-width: 850px;
+}
+.header-title span {
+    color: #D49D32;
+}
+.header-title p {
+    font-family: 'urbanist';
+}
+
+.header-title a {
+    background-color: #D49D32;
+    background: url(/img/Rectangle\ 608.png) no-repeat center center;
+    background-size: cover;
+    background-position: -300px;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    grid-gap: 10px;
+    max-width: 315px;
+    border: 1px solid #D49D32;
+    box-shadow: 0px 0px 10px #D49D32;
+    transition: .6s;
+}
+.header-title a img {
+    transition: .6s;
+    z-index: 1;
+}
+.header-title a p {
+    transition: .4s;
+    z-index: 2;
+}
+.header-title a:hover img {
+    transform: translateX(257px);
+}
+.header-title a:hover {
+    background-position: 0px;
+    box-shadow: 0px 0px 10px 2px #D49D32;
+}
+
+@media only screen and (min-width: 810px) and (max-width: 1080px) {
+
+    .header-title h1 {
+        font-size: 1.6rem;
+    }
+    .header-title p {
+        font-size: .85rem;
+    }
+    
+}
+@media only screen and (min-width: 540px) and (max-width: 809px) {
+
+    .header-title h1 {
+        font-size: 1.6rem;
+    }
+    .header-title p {
+        font-size: .85rem;
+    }
+
+    .header-grid-e {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+}
+@media only screen and (min-width: 355px) and (max-width: 539px) {
+
+    .header-title h1 {
+        font-size: 1.2rem;
+    }
+    .header-title p {
+        font-size: .7rem;
+    }
+
+    .header-grid-e {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+}
+@media only screen and (min-width: 0px) and (max-width: 354px) {
+
+    .header-title h1 {
+        font-size: 1rem;
+    }
+    .header-title p {
+        font-size: .6rem;
+    }
+
+    .header-grid-e {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+}

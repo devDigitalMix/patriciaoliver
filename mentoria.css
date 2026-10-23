@@ -1,0 +1,108 @@
+.mentoria {
+    border-top: 1px solid #fff;
+    background: url(/img/fundao.webp) no-repeat center center;
+    background-size: cover;
+    background-color: #1B1B1B;
+    height: 0px;
+    position: relative;
+    z-index: 1;
+}
+.mentoriatala {
+    z-index: 6;
+    height: auto;
+}
+.mentoria-grid {
+    display: grid;
+    justify-items: center;
+    max-width: 540px;
+    padding: 80px;
+    text-align: center;
+    background-color: #282828;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 158px;
+    transform: translateY(0px);
+    transition: .4s;
+    opacity: 1;
+    z-index: 4;
+    border-bottom: 2px solid #fff;
+}
+.agr {
+    transform: translateY(0px);
+    opacity: 1;
+    position: relative;
+    z-index: 4;
+}
+.mais-depois {
+    position: absolute;
+    max-width: fit-content;
+    bottom: -90px;
+}
+.mais-depois img {
+    transform: rotate(180deg);
+}
+.mentoria-grid h5 {
+    font-family: 'urbanist';
+    font-size: 0.83rem;
+    letter-spacing: .3em;
+    margin-bottom: 20px;
+}
+.mentoria-grid p {
+    font-family: 'urbanist';
+    font-size: 0.83rem;
+    font-weight: 700;
+}
+.mentoria-grid p span{
+    color: #D49D32;
+}
+
+.mentoria-content {
+    margin-bottom: 20px;
+}
+
+.mentoria-contato {
+    text-align: center;
+    font-family: 'urbanist';
+    font-size: 0.83rem;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.mentoria-contato a {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #D49D32;
+    grid-gap: 10px;
+    transition: .3s;
+}
+.mentoria-contato a:hover img {
+    transform: scale(1.05);
+}
+.mentoria-contato a:hover {
+    text-shadow: 0px 0px 3px #D49D32;
+}
+.mentoria-contato a img {
+    transition: .3s;
+}
+
+@media only screen and (min-width: 390px) and (max-width: 470px) {
+
+    .mentoria-grid {
+        padding: 20px;
+    }
+    
+}
+@media only screen and (min-width: 0px) and (max-width: 389px) {
+
+    .mentoria-grid {
+        padding: 20px;
+    }
+    .mentoria-grid p {
+        font-family: 'urbanist';
+        font-size: 0.65rem;
+        font-weight: 400;
+    }
+    
+} 

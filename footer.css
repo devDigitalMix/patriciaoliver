@@ -1,0 +1,14 @@
+.footer {
+    height: 100px;
+    background-color: #1B1B1B;
+    display: grid;
+    align-items: center;
+}
+.footer a {
+    text-align: center;
+    font-family: Urbanist;
+    transition: .3s;
+}
+.footer a:hover {
+    color: #D49D32;
+}

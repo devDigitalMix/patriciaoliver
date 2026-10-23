@@ -1,0 +1,43 @@
+.avaliacoes {
+    background: url(/img/microsoft-edge-DNADGmifFsc-unsplash\ 1.webp) no-repeat center center;
+    background-size: cover;
+    padding: 120px 0px;
+}
+.avaliacoes-title h4 {
+    font-size: 3.75rem;
+    font-family: Funwork;
+    text-align: center;
+    line-height: 1.1em;
+}
+.avaliacoes-title > span {
+    width: 60px;
+    height: 2px;
+    background-color: #FCFCF6;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.avaliacoes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.avaliacoes-grid > div {
+    background-color: rgba(255, 255, 255, 0.15);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Urbanist;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+}
+.avaliacoes-grid > div > p > span {
+    color: #D49D32;
+}
+
+@media only screen and (max-width: 700px) {
+    .avaliacoes-title h4 {
+        font-size: 1.65rem;
+    }
+}

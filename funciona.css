@@ -1,0 +1,109 @@
+.funciona {
+    background: url(/img/9\ 4.webp) center center no-repeat;
+    background-size: cover;
+    padding: 80px 10px;
+    border-bottom: 2px solid #D49D32;
+    border-top: 2px solid #D49D32;
+}
+.funciona-grid {
+    display: grid;
+    justify-content: center;
+}
+.funciona-grid > div {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    max-width: 688px;
+    padding: 30px 40px;
+    display: grid;
+    justify-content: center;
+    border-top: 5px solid #fff;
+}
+.funciona-grid > div h3 {
+    color: #D49D32;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: Funwork;
+}
+.funciona-grid > div > span {
+    background-color: #D49D32;
+    width: 100px;
+    height: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.funciona-grid > div > p {
+    text-align: center;
+    font-size: 0.83rem;
+    font-family: Urbanist;
+}
+.funciona-grid > div > p span {
+    color: #D49D32;
+}
+.funciona-grid > div a:last-child {
+    display: flex;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    color: #D49D32;
+    text-shadow: 0px 0px 10px 0px #F4A14E;
+    font-size: 0.83333rem;
+    font-family: Urbanist;
+    margin-top: 10px;
+}
+.funciona-grid > div a:last-child img {
+    position: absolute;
+    right: -28px;
+    bottom: 1px;
+}
+
+@media only screen and (min-width: 340px) and (max-width: 411px) {
+
+    .funciona-grid > div h3 {
+        font-size: 1rem;
+    }
+    .funciona-grid > div > p {
+        text-align: center;
+        font-size: 0.6rem;
+        font-family: Urbanist;
+    }
+    .funciona-grid > div a {
+        font-size: 0.7rem;
+    }
+    .funciona-grid > div a:last-child {
+        font-size: 0.7rem;
+    }
+    
+}
+@media only screen and (min-width: 0px) and (max-width: 339px) {
+
+    .funciona-grid > div h3 {
+        font-size: 1rem;
+    }
+    .funciona-grid > div {
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(2px);
+        max-width: 688px;
+        padding: 30px 10px;
+        display: grid;
+        justify-content: center;
+        border-top: 5px solid #fff;
+    }
+    .funciona-grid > div > p {
+        text-align: center;
+        font-size: 0.6rem;
+        font-family: Urbanist;
+    }
+    .funciona-grid > div a {
+        font-size: 0.6rem;
+    }
+    .funciona-grid > div a:last-child {
+        font-size: 0.6rem;
+    }
+    
+}

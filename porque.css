@@ -1,0 +1,125 @@
+.porque {
+    padding: 100px 10px;
+    padding-bottom: 0PX;
+    border-bottom: 2px solid #D49D32;
+    border-top: 2px solid #D49D32;
+    background: url(/img/9\ 4.webp);
+}
+.porque-title {
+    text-align: center;
+}
+.porque-title h4 {
+    color: #D49D32;
+    text-align: center;
+    font-size: 1.66667rem;
+    font-family: Funwork;
+    letter-spacing: 0.33333rem;
+}
+.porque-title p {
+    text-align: center;
+    font-size: 1rem;
+    font-family: Urbanist;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.2em;
+}
+.porque-title span {
+    width: 100px;
+    height: 1px;
+    background: #D49D32;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.porque-grid {
+    display: grid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+.porque-grid div {
+    border: 1px solid #D49D32;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+    padding: 50px 30px;
+}
+.porque-grid div > span {
+    width: 100px;
+    height: 1px;
+    background: #D49D32;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.porque-grid div h3 {
+    text-align: center;
+    font-size: 0.83333rem;
+    font-family: Urbanist;
+    text-transform: uppercase;
+}
+.porque-grid div p {
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: Urbanist;
+}
+.porque-grid div p span {
+    color: #D49D32;
+    font-weight: 700;
+}
+
+.botoes a:nth-child(1) {
+    margin-top: 80px;
+    font-family: Urbanist;
+
+}
+
+.botoes a:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #D49D32;
+    font-family: Urbanist;
+
+    text-shadow: 0px 0px 10px #D49D32;
+}
+
+@media only screen and (min-width: 620px) and (max-width: 1110px) {
+
+    .porque-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media only screen and (min-width: 333px) and (max-width: 619px) {
+
+    .porque-grid {
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media only screen and (min-width: 0px) and (max-width: 332px) {
+
+    .porque-grid {
+        grid-template-columns: 1fr;
+    }
+    .porque-title h4 {
+        font-size: 1.2rem;
+    }
+    .porque-title p {
+        font-size: .8rem;
+    }
+    .botoes a:nth-child(2) {
+        font-size: .75rem;
+    }
+
+    .porque-grid div {
+        padding: 30px 10px;
+    }
+    
+}
